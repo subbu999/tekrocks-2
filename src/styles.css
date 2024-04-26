@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+/* theme color : rgb(0, 91, 86);  */
+
+body p {
+  color: #565656;
+}
+/* scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #cccccc;
+  box-shadow: inset 0 0 5px rgb(71, 70, 70);
+}
+::-webkit-scrollbar-thumb {
+  border: 2px solid #cccccc;
+  background-color: tomato;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.jumbotron {
+  background-color: #eeeeee;
+  padding: 4rem 0rem;
+  text-align: center;
+}
+
+.page-banner-wrapper {
+  position: relative;
+}
+.page-banner-wrapper .text-container {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  padding: 10px 20px;
+  color: rgb(0, 91, 86);
+  border: 2px solid rgb(0, 91, 86);
+}
+.page-banner-wrapper .img-container {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle(60% at 50% 10%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tekrocks2';
+  title = 'TekRocks IT Services LLC';
+  windowScrolled: boolean = false;
+  constructor() { }
+  @HostListener('window:scroll', []) onWindowScroll() {
+    if (window.scrollY > 100) {
+      this.windowScrolled = true;
+    }
+    else if (this.windowScrolled && window.scrollY < 10) {
+      this.windowScrolled = false;
+    }
+  }
+  onScrollTopClick() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }
 }
