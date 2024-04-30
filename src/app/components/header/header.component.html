@@ -5,7 +5,7 @@
                 <a class="navbar-brand" routerLink="/"><img src="../assets/img/logo.jpg" width="180"
                         alt="Tek Rocks IT Services LLC logo" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                    <i class="bi bi-list text-danger"></i>
+                    <i class="bi bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav mx-auto">
@@ -19,20 +19,28 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <span routerLink="services">SERVICES</span>
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown collapse"
+                                data-bs-target=".navbar-collapse.show" aria-expanded="false">
+                                <span routerLink="services" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">SERVICES</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item dropend">
                                     <a class="dropdown-item" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        <span routerLink="/services/software-development">SOFTWARE DEVELOPMENT</span>
+                                        <span routerLink="/services/software-development" data-bs-toggle="collapse"
+                                            data-bs-target=".navbar-collapse.show">SOFTWARE DEVELOPMENT</span>
+                                        <span class="custom-toggle"><i
+                                                class="bi bi-chevron-double-right d-none d-md-block"></i>
+                                            <i class="bi bi-chevron-double-down d-md-none"></i></span>
+
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
                                             <a class="dropdown-item"
-                                                routerLink="/services/software-development/application-development">APPLICATION
+                                                routerLink="/services/software-development/application-development"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">APPLICATION
                                                 DEVELOPMENT</a>
                                         </li>
                                         <li>
@@ -40,7 +48,9 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item"
-                                                routerLink="/services/software-development/application-re-designing">APPLICATION
+                                                routerLink="/services/software-development/application-re-designing"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">APPLICATION
                                                 RE-DESIGNING</a>
                                         </li>
                                         <li>
@@ -48,22 +58,25 @@
                                         </li>
                                         <li>
                                             <a class="dropdown-item"
-                                                routerLink="/services/software-development/customized-web">CUSTOMIZED
+                                                routerLink="/services/software-development/customized-web"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">CUSTOMIZED
                                                 WEB</a>
                                         </li>
                                         <li>
                                             <hr class="dropdown-divider" />
                                         </li>
                                         <li>
-                                            <a class="dropdown-item"
-                                                routerLink="/services/software-development/cms">CMS</a>
+                                            <a class="dropdown-item" routerLink="/services/software-development/cms"
+                                                data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">CMS</a>
                                         </li>
                                         <li>
                                             <hr class="dropdown-divider" />
                                         </li>
                                         <li>
                                             <a class="dropdown-item"
-                                                routerLink="/services/software-development/mobile-app-development">MOBILE
+                                                routerLink="/services/software-development/mobile-app-development"
+                                                data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">MOBILE
                                                 APPLICATION
                                                 DEVELOPMENT</a>
                                         </li>
@@ -75,37 +88,47 @@
                                 <li class="nav-item dropend">
                                     <a class="dropdown-item" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        <span routerLink="/services/technologies">TECHNOLOGIES</span>
+                                        <span routerLink="/services/technologies" data-bs-toggle="collapse"
+                                            data-bs-target=".navbar-collapse.show">TECHNOLOGIES</span><span
+                                            class="custom-toggle"><i
+                                                class="bi bi-chevron-double-right d-none d-md-block"></i>
+                                            <i class="bi bi-chevron-double-down d-md-none"></i></span>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" routerLink="/services/technologies/php">PHP</a>
+                                            <a class="dropdown-item" routerLink="/services/technologies/php"
+                                                data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">PHP</a>
                                         </li>
                                         <li>
                                             <hr class="dropdown-divider" />
                                         </li>
                                         <li>
-                                            <a class="dropdown-item"
-                                                routerLink="/services/technologies/dot-net">.NET</a>
+                                            <a class="dropdown-item" routerLink="/services/technologies/dot-net"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">.NET</a>
                                         </li>
                                         <li>
                                             <hr class="dropdown-divider" />
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" routerLink="/services/technologies/dba">DBA</a>
+                                            <a class="dropdown-item" routerLink="/services/technologies/dba"
+                                                data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">DBA</a>
                                         </li>
                                         <li>
                                             <hr class="dropdown-divider" />
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" routerLink="/services/technologies/java">JAVA</a>
+                                            <a class="dropdown-item" routerLink="/services/technologies/java"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">JAVA</a>
                                         </li>
                                         <li>
                                             <hr class="dropdown-divider" />
                                         </li>
                                         <li>
-                                            <a class="dropdown-item"
-                                                routerLink="/services/technologies/testing">TESTING</a>
+                                            <a class="dropdown-item" routerLink="/services/technologies/testing"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">TESTING</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -115,19 +138,25 @@
                                 <li class="nav-item dropend">
                                     <a class="dropdown-item" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        <span routerLink="/services/training">TRAINING</span>
+                                        <span routerLink="/services/training" data-bs-toggle="collapse"
+                                            data-bs-target=".navbar-collapse.show">TRAINING</span><span
+                                            class="custom-toggle"><i
+                                                class="bi bi-chevron-double-right d-none d-md-block"></i>
+                                            <i class="bi bi-chevron-double-down d-md-none"></i></span>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <a class="dropdown-item" routerLink="/services/training/java">JAVA
+                                            <a class="dropdown-item" routerLink="/services/training/java"
+                                                data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">JAVA
                                                 TRAINING</a>
                                         </li>
                                         <li>
                                             <hr class="dropdown-divider" />
                                         </li>
                                         <li>
-                                            <a class="dropdown-item"
-                                                routerLink="/services/training/peoplesoft">PEOPLESOFT TRAINING</a>
+                                            <a class="dropdown-item" routerLink="/services/training/peoplesoft"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">PEOPLESOFT TRAINING</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -135,7 +164,8 @@
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" role="button" routerLink="/services/it-staffing">
+                                    <a class="dropdown-item" role="button" routerLink="/services/it-staffing"
+                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                                         IT STAFFING
                                     </a>
                                 </li>
@@ -143,7 +173,8 @@
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" role="button" routerLink="/services/it-consulting">
+                                    <a class="dropdown-item" role="button" routerLink="/services/it-consulting"
+                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                                         IT CONSULTING
                                     </a>
                                 </li>
@@ -151,16 +182,108 @@
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li class="nav-item">
-                                    <a class="dropdown-item" role="button" routerLink="/services/healthcare">
+                                    <a class="dropdown-item" role="button" routerLink="/services/healthcare"
+                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                                         HEALTHCARE
                                     </a>
                                 </li>
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a routerLink="solutions" routerLinkActive="active" class="nav-link"
-                                data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">SOLUTIONS</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span routerLink="solutions" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse.show">SOLUTIONS</span>
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li class="nav-item">
+                                    <a class="dropdown-item" role="button" routerLink="/solutions/erp"
+                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                                        ERP
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" role="button" routerLink="/solutions/mobile-app"
+                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                                        MOBILE APP
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" role="button" routerLink="/solutions/cloud-computing"
+                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                                        CLOUD COMPUTING
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" role="button" routerLink="/solutions/software-testing"
+                                        data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                                        SOFTWARE TESTING
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li class="nav-item dropend">
+                                    <a class="dropdown-item" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span routerLink="/solutions/staff-augmentation">STAFF AUGMENTATION</span><span
+                                            class="custom-toggle"><i
+                                                class="bi bi-chevron-double-right d-none d-md-block"></i>
+                                            <i class="bi bi-chevron-double-down d-md-none"></i></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item"
+                                                routerLink="/solutions/staff-augmentation/contract-staffing"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">CONTRACT
+                                                STAFFING</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item"
+                                                routerLink="/solutions/staff-augmentation/permanent-hiring"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">PERMANENT
+                                                HIRING</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item"
+                                                routerLink="/solutions/staff-augmentation/contract-to-hire-staffing"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">CONTRACT-TO-HIRE
+                                                STAFFING</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item"
+                                                routerLink="/solutions/staff-augmentation/offshore-staffing"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target=".navbar-collapse.show">OFFSHORE
+                                                STAFFING</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a routerLink="careers" routerLinkActive="active" class="nav-link" data-bs-toggle="collapse"

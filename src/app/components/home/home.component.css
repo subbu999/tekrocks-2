@@ -13,8 +13,8 @@
   height: 100vh;
   background-image: linear-gradient(
     to right,
-    rgba(0, 13, 67, 0.457),
-    rgba(0, 13, 67, 0.457)
+    rgba(0, 13, 67, 0.657),
+    rgba(0, 13, 67, 0.7)
   );
 }
 .carousel-item img {

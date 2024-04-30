@@ -7,13 +7,11 @@
 }
 /* menu icon styles */
 .navbar-toggler {
-  box-shadow: 2px 3px 4px #ccc;
   outline: none;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+  box-shadow: none;
+}
+.navbar-toggler .bi-list {
+  color: rgb(0, 91, 86);
 }
 .dropdown-menu {
   border-radius: 0;
@@ -24,6 +22,7 @@
 }
 .dropdown-item {
   font-size: 0.8rem;
+  padding-right: 2rem;
 }
 .dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -35,6 +34,10 @@
 
 .dropdown .dropdown-menu {
   display: none;
+}
+.custom-toggle {
+  position: absolute;
+  right: 1rem;
 }
 @media (min-width: 769px) {
   .dropend:hover > .dropdown-menu {

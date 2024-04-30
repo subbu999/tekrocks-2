@@ -41,11 +41,14 @@ body p {
   -o-transform: translateX(-50%);
   padding: 10px 20px;
   color: rgb(0, 91, 86);
-  border: 2px solid rgb(0, 91, 86);
+  border: 2px solid rgb(250, 140, 121);
+}
+.page-banner-wrapper .text-container h4 {
+  font-weight: normal;
 }
 .page-banner-wrapper .img-container {
   width: 100%;
-  height: 350px;
+  height: 380px;
   overflow: hidden;
 }
 .img-container img {

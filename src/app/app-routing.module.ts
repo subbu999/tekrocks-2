@@ -25,6 +25,15 @@ import { PeoplesoftTrainingComponent } from './components/services/training/peop
 import { ItStaffingComponent } from './components/services/it-staffing/it-staffing.component';
 import { ItConsultingComponent } from './components/services/it-consulting/it-consulting.component';
 import { HealthcareComponent } from './components/services/healthcare/healthcare.component';
+import { MobileAppComponent } from './components/solutions/mobile-app/mobile-app.component';
+import { ErpComponent } from './components/solutions/erp/erp.component';
+import { CloudComputingComponent } from './components/solutions/cloud-computing/cloud-computing.component';
+import { SoftwareTestingComponent } from './components/solutions/software-testing/software-testing.component';
+import { StaffAugmentationComponent } from './components/solutions/staff-augmentation/staff-augmentation.component';
+import { ContractStaffingComponent } from './components/solutions/staff-augmentation/contract-staffing/contract-staffing.component';
+import { ContractToHireStaffingComponent } from './components/solutions/staff-augmentation/contract-to-hire-staffing/contract-to-hire-staffing.component';
+import { PermanentStaffingComponent } from './components/solutions/staff-augmentation/permanent-staffing/permanent-staffing.component';
+import { OffshoreStaffingComponent } from './components/solutions/staff-augmentation/offshore-staffing/offshore-staffing.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -63,6 +72,24 @@ const routes: Routes = [
       { path: 'it-staffing', component: ItStaffingComponent },
       { path: 'it-consulting', component: ItConsultingComponent },
       { path: 'healthcare', component: HealthcareComponent },
+    ]
+  },
+  {
+    path: 'solutions', children: [
+      { path: '', component: SolutionsComponent },
+      { path: 'erp', component: ErpComponent },
+      { path: 'mobile-app', component: MobileAppComponent },
+      { path: 'cloud-computing', component: CloudComputingComponent },
+      { path: 'software-testing', component: SoftwareTestingComponent },
+      {
+        path: 'staff-augmentation', children: [
+          { path: '', component: StaffAugmentationComponent },
+          { path: 'contract-staffing', component: ContractStaffingComponent },
+          { path: 'contract-to-hire-staffing', component: ContractToHireStaffingComponent },
+          { path: 'permanent-hiring', component: PermanentStaffingComponent },
+          { path: 'offshore-staffing', component: OffshoreStaffingComponent }
+        ]
+      },
     ]
   },
   { path: 'solutions', component: SolutionsComponent },

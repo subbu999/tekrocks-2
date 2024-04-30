@@ -37,6 +37,15 @@ import { PeoplesoftTrainingComponent } from './components/services/training/peop
 import { ItStaffingComponent } from './components/services/it-staffing/it-staffing.component';
 import { ItConsultingComponent } from './components/services/it-consulting/it-consulting.component';
 import { HealthcareComponent } from './components/services/healthcare/healthcare.component';
+import { ErpComponent } from './components/solutions/erp/erp.component';
+import { MobileAppComponent } from './components/solutions/mobile-app/mobile-app.component';
+import { CloudComputingComponent } from './components/solutions/cloud-computing/cloud-computing.component';
+import { SoftwareTestingComponent } from './components/solutions/software-testing/software-testing.component';
+import { StaffAugmentationComponent } from './components/solutions/staff-augmentation/staff-augmentation.component';
+import { ContractStaffingComponent } from './components/solutions/staff-augmentation/contract-staffing/contract-staffing.component';
+import { ContractToHireStaffingComponent } from './components/solutions/staff-augmentation/contract-to-hire-staffing/contract-to-hire-staffing.component';
+import { PermanentStaffingComponent } from './components/solutions/staff-augmentation/permanent-staffing/permanent-staffing.component';
+import { OffshoreStaffingComponent } from './components/solutions/staff-augmentation/offshore-staffing/offshore-staffing.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +75,16 @@ import { HealthcareComponent } from './components/services/healthcare/healthcare
     PeoplesoftTrainingComponent,
     ItStaffingComponent,
     ItConsultingComponent,
-    HealthcareComponent
+    HealthcareComponent,
+    ErpComponent,
+    MobileAppComponent,
+    CloudComputingComponent,
+    SoftwareTestingComponent,
+    StaffAugmentationComponent,
+    ContractStaffingComponent,
+    ContractToHireStaffingComponent,
+    PermanentStaffingComponent,
+    OffshoreStaffingComponent
   ],
   imports: [
     BrowserModule,
