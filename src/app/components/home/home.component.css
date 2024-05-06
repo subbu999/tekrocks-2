@@ -3,7 +3,15 @@
   position: relative;
   top: -63px;
 }
-
+.carousel-indicators {
+  position: absolute;
+  z-index: 101;
+  bottom: 20%;
+  left: 0%;
+}
+.carousel-indicators button {
+  background-color: #04d9ff;
+}
 .carousel-item::after {
   position: absolute;
   left: 0;
@@ -28,10 +36,7 @@
 .carousel-caption p {
   color: #fefefe;
 }
-.carousel-control-prev .bi,
-.carousel-control-next .bi {
-  font-size: 2rem;
-}
+
 .bi-arrow-left-circle,
 .bi-arrow-right-circle {
   font-size: 2rem;
