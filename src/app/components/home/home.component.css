@@ -36,6 +36,7 @@
   font-size: 2rem;
 }
 .img-holder {
+  cursor: pointer;
   position: relative;
   overflow: hidden !important;
   border-radius: 0.5rem;

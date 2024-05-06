@@ -1,3 +1,7 @@
+.img-container img {
+  object-position: 0% 15%;
+}
+
 .option-wrapper {
   background-color: rgba(0, 91, 86, 0.25);
   border-left: 5px solid rgb(0, 91, 86);
