@@ -1,229 +1,242 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 p-0">
-            <div class="page-banner-wrapper">
-                <div class="img-container">
-                    <img src="../../../../assets/img/software-testing-banner.jpg" alt="">
-                </div>
-                <div class="text-container bg-white d-inline-block">
-                    <h4>SOFTWARE TESTING</h4>
+<ng-container *ngIf="loading; else content">
+    <div class="loader-wrapper d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="loader"></div>
+        <div class="loader-text">
+            <small>Loading...</small>
+        </div>
+    </div>
+</ng-container>
+<ng-template #content>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div class="page-banner-wrapper">
+                    <div class="img-container">
+                        <img src="../../../../assets/img/software-testing-banner.jpg" alt="">
+                    </div>
+                    <div class="text-container bg-white d-inline-block">
+                        <h4>SOFTWARE TESTING</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5 pt-3">
-    <div class="row">
-        <div class="col-sm-12">
-            <p>Software Testing Services India - Risk-Free Pilot. Our approach integrates On Demand testing at any stage
-                of the lifecycle, ensuring project quality and timely, within-budget delivery. With our services, you
-                can confidently deliver software and enhance competitiveness, covering test plan formulation, execution,
-                defect reporting, analysis, risk assessments, and recommendations.</p>
-            <h5>Software Verification & Validation</h5>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+    <div class="container my-5 pt-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Software Testing Services India - Risk-Free Pilot. Our approach integrates On Demand testing at any
+                    stage
+                    of the lifecycle, ensuring project quality and timely, within-budget delivery. With our services,
+                    you
+                    can confidently deliver software and enhance competitiveness, covering test plan formulation,
+                    execution,
+                    defect reporting, analysis, risk assessments, and recommendations.</p>
+                <h5>Software Verification & Validation</h5>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Black Box/Functionality Testing</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Black Box/Functionality Testing</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Unit Testing</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">End to End Testing</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Unit Testing</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Regression Testing</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Configuration/Compatibility Testing</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">End to End Testing</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">User Acceptance Testing (UAT)
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Installation/Integration Testing</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Regression Testing</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Security/Vulnerability Testing</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">White Box/Structural Testing</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Configuration/Compatibility Testing</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Usability Testing</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Internationalization/Localization Testing</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">User Acceptance Testing (UAT)
-                    </p>
+                <div class="point-wrapper d-flex mb-1 mb-3">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">GUI Testing</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <h5>Test Automation</h5>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Automated Testing</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Installation/Integration Testing</p>
+                <div class="point-wrapper d-flex mb-1 mb-3">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Implementation</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <h5>Performance Engineering Services</h5>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Load Testing</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Security/Vulnerability Testing</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Endurance Testing</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Spike Testing</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">White Box/Structural Testing</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Performance Tuning</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Capacity Planning</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Usability Testing</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">24&times;7 Monitoring Service</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1 mb-3">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Performance Consulting</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Internationalization/Localization Testing</p>
+                <h5>Software QA & Process Consulting</h5>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Software QA & Process Consulting</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1 mb-3">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Test Strategy & Managementsli</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">GUI Testing</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Gap Analysis</p>
+                    </div>
                 </div>
-            </div>
-            <h5>Test Automation</h5>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Automated Testing</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1 mb-3">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Implementation</p>
-                </div>
-            </div>
-            <h5>Performance Engineering Services</h5>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Load Testing</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Endurance Testing</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Spike Testing</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Performance Tuning</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Capacity Planning</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">24&times;7 Monitoring Service</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1 mb-3">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Performance Consulting</p>
-                </div>
-            </div>
-            <h5>Software QA & Process Consulting</h5>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Software QA & Process Consulting</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Test Strategy & Managementsli</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Gap Analysis</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Training</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Training</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</ng-template>

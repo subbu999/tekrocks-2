@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contract-to-hire-staffing.component.css']
 })
 export class ContractToHireStaffingComponent implements OnInit {
-
+  loading: boolean = true;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000)
   }
 
 }

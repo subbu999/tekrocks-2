@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./java-training.component.css']
 })
 export class JavaTrainingComponent implements OnInit {
-
+  loading: boolean = true;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500)
   }
 
 }

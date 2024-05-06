@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./software-testing.component.css']
 })
 export class SoftwareTestingComponent implements OnInit {
-
+  loading: boolean = true;
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500)
   }
 
 }

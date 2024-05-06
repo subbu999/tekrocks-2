@@ -1,71 +1,88 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 p-0">
-            <div class="page-banner-wrapper">
-                <div class="img-container">
-                    <img src="../../../../../assets/img/peoplesoft-training-banner.jpg" alt="">
-                </div>
-                <div class="text-container bg-white d-inline-block">
-                    <h4>PEOPLESOFT TRAINING</h4>
+<ng-container *ngIf="loading; else content">
+    <div class="loader-wrapper d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="loader"></div>
+        <div class="loader-text">
+            <small>Loading...</small>
+        </div>
+    </div>
+</ng-container>
+<ng-template #content>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div class="page-banner-wrapper">
+                    <div class="img-container">
+                        <img src="../../../../../assets/img/peoplesoft-training-banner.jpg" alt="">
+                    </div>
+                    <div class="text-container bg-white d-inline-block">
+                        <h4>PEOPLESOFT TRAINING</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5 py-3">
-    <div class="row">
-        <div class="col-sm-12">
-            <p>PeopleSoft Training Services optimize IT investment.</p>
-            <p>In today's digital landscape, organizations rely heavily on their applications to deliver top-notch
-                service to customers and citizens, striving for peak performance. Whether developing new applications or
-                maintaining existing ones, the stakes are high. Organizations require clarity on the timeline for
-                delivering value, the stability of applications, and the minimization of maintenance costs, all while
-                facilitating swift changes when necessary.</p>
-            <h6>We can help clients improve their return on IT spend:</h6>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+    <div class="container my-5 py-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>PeopleSoft Training Services optimize IT investment.</p>
+                <p>In today's digital landscape, organizations rely heavily on their applications to deliver top-notch
+                    service to customers and citizens, striving for peak performance. Whether developing new
+                    applications or
+                    maintaining existing ones, the stakes are high. Organizations require clarity on the timeline for
+                    delivering value, the stability of applications, and the minimization of maintenance costs, all
+                    while
+                    facilitating swift changes when necessary.</p>
+                <h6>We can help clients improve their return on IT spend:</h6>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">We significantly enhance product quality, slashing defect density by up to
+                            65%,
+                            while boosting development productivity by as much as 30%. Moreover, we achieve timely and
+                            budget-conscious project delivery up to 90% of the time.
+                        </p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">We significantly enhance product quality, slashing defect density by up to 65%,
-                        while boosting development productivity by as much as 30%. Moreover, we achieve timely and
-                        budget-conscious project delivery up to 90% of the time.
-                    </p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">We ramp up productivity by up to 45%, coupled with cost reductions of up to
+                            50%.
+                        </p>
+                    </div>
                 </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">We ensure 99% or higher application availability, slash trouble tickets by
+                            70%,
+                            and achieve up to 100% efficiency in processing backlogs.
+                        </p>
+                    </div>
+                </div>
+                <p>Maintaining and modernizing business-critical mainframe applications can be a daunting task due to
+                    their
+                    age and complexity. With most of these applications developed over 20 years ago, they often lack
+                    up-to-date documentation and face challenges with the attrition of knowledgeable engineers.</p>
+                <p>TekRocks IT Services application development and support services specialize in maintaining and
+                    replacing
+                    legacy
+                    mainframe applications. They have expertise in managing mainframe costs, addressing change requests,
+                    handling cost pressures, and providing support for niche technologies and packaged solutions.</p>
+                <p>TekRocks IT Services comprehensive services focus on improving application quality by addressing
+                    issues
+                    related to
+                    structure, code quality, and efficiency. They specialize in cleaning up dead components and unusable
+                    code that may accumulate over time due to inadequate funding for periodic cleanup and optimization.
+                    Mindtree leverages both in-house and partner toolsets to optimize inventory and MIPS (Million
+                    Instructions Per Second) utilization, ensuring efficient operation of mainframe applications.</p>
             </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">We ramp up productivity by up to 45%, coupled with cost reductions of up to
-                        50%.
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">We ensure 99% or higher application availability, slash trouble tickets by 70%,
-                        and achieve up to 100% efficiency in processing backlogs.
-                    </p>
-                </div>
-            </div>
-            <p>Maintaining and modernizing business-critical mainframe applications can be a daunting task due to their
-                age and complexity. With most of these applications developed over 20 years ago, they often lack
-                up-to-date documentation and face challenges with the attrition of knowledgeable engineers.</p>
-            <p>TekRocks IT Services application development and support services specialize in maintaining and replacing
-                legacy
-                mainframe applications. They have expertise in managing mainframe costs, addressing change requests,
-                handling cost pressures, and providing support for niche technologies and packaged solutions.</p>
-            <p>TekRocks IT Services comprehensive services focus on improving application quality by addressing issues
-                related to
-                structure, code quality, and efficiency. They specialize in cleaning up dead components and unusable
-                code that may accumulate over time due to inadequate funding for periodic cleanup and optimization.
-                Mindtree leverages both in-house and partner toolsets to optimize inventory and MIPS (Million
-                Instructions Per Second) utilization, ensuring efficient operation of mainframe applications.</p>
         </div>
     </div>
-</div>
+</ng-template>

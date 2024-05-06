@@ -6,6 +6,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  loading: boolean = true;
   title = 'TekRocks IT Services LLC';
   windowScrolled: boolean = false;
   constructor() { }
@@ -16,6 +17,11 @@ export class AppComponent {
     else if (this.windowScrolled && window.scrollY < 10) {
       this.windowScrolled = false;
     }
+  }
+  ngOnInit() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500)
   }
   onScrollTopClick() {
     window.scroll({

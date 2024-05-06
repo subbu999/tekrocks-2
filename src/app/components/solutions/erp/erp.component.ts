@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./erp.component.css']
 })
 export class ErpComponent implements OnInit {
-
+  loading: boolean = true;
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => { this.loading = false }, 1500);
   }
 
 }

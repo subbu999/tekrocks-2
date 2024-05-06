@@ -1,200 +1,222 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 p-0">
-            <div class="page-banner-wrapper">
-                <div class="img-container">
-                    <img src="../../../../assets/img/mobile-app-banner.jpg" alt="">
-                </div>
-                <div class="text-container bg-white d-inline-block">
-                    <h4>MOBILE APP</h4>
+<ng-container *ngIf="loading; else content">
+    <div class="loader-wrapper d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="loader"></div>
+        <div class="loader-text">
+            <small>Loading...</small>
+        </div>
+    </div>
+</ng-container>
+<ng-template #content>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div class="page-banner-wrapper">
+                    <div class="img-container">
+                        <img src="../../../../assets/img/mobile-app-banner.jpg" alt="">
+                    </div>
+                    <div class="text-container bg-white d-inline-block">
+                        <h4>MOBILE APP</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5 pt-3">
-    <div class="row">
-        <div class="col-sm-12">
-            <p>Our powerful mobile app solution enhances meeting, event, and conference marketing. We prioritize your
-                event's success and collaborate closely with you to optimize marketing efforts through our mobile app
-                solutions.
-            </p>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+    <div class="container my-5 pt-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Our powerful mobile app solution enhances meeting, event, and conference marketing. We prioritize
+                    your
+                    event's success and collaborate closely with you to optimize marketing efforts through our mobile
+                    app
+                    solutions.
+                </p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Our mobile solution enhances the experience of both attendees and speakers,
+                            ensuring a seamless event experience.</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Our mobile solution enhances the experience of both attendees and speakers,
-                        ensuring a seamless event experience.</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Our mobile solution serves as an eco-friendly extension of your printed
+                            event
+                            guide, offering convenience and sustainability.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">We can assist in further monetizing your event by attracting additional
+                            sponsorship, exhibitors, and visitors, maximizing revenue opportunities.</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Our mobile solution serves as an eco-friendly extension of your printed event
-                        guide, offering convenience and sustainability.</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Stay connected with your conference audience and enhance event success
+                            through
+                            constant communication and engagement.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Manage event details effortlessly with an easy-to-use interface, providing
+                            instantaneous updates to attendees' mobile devices.</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">We can assist in further monetizing your event by attracting additional
-                        sponsorship, exhibitors, and visitors, maximizing revenue opportunities.</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Ensure ongoing engagement by keeping the app and data active even after the
+                            event date has passed.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1 mb-3">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Transform into your single window for all future events, consolidating
+                            information and enhancing accessibility for attendees.</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Stay connected with your conference audience and enhance event success through
-                        constant communication and engagement.</p>
+                <h5>Branded Mobile Event Application Solution Tailored to Your Specific Needs.</h5>
+                <p>TekRocks IT Services has developed a proprietary mobile event application using .NET technology. This
+                    application can be customized to enhance attendee experience, boost engagement, and deliver
+                    measurable
+                    ROI for your events or conferences.</p>
+                <p>We have created and deployed native mobile applications and mobile web solutions using a content
+                    management system (CMS) built on the Microsoft .NET framework. Our solutions cater to all major
+                    mobile
+                    platforms, including Apple iPhone, iPad, Android, BlackBerry (coming soon!), and Windows Phone 7
+                    (coming
+                    soon!). We offer hosting for the entire solution throughout the event and beyond.</p>
+                <h5>Custom Event Mobile App Development</h5>
+                <p>We provide pre-built modular mobile event app solutions as well as custom development options
+                    tailored to
+                    enhance your event brand and meet your unique requirements.</p>
+                <p>Our mobile developers can design, develop, and deliver premium features and functionality for your
+                    event
+                    or conference. These may include surveys, polling, local weather, social media integration, cover
+                    flow
+                    image gallery, interactive trade show maps, QR Codes, document management, banner ads, and
+                    sponsorship,
+                    offering a tailored solution to meet your specific needs.</p>
+                <h5>EventToGo Mobile & Content Management System</h5>
+                <p>EventToGo is our comprehensive mobile app paired with a content management system (CMS) platform,
+                    enabling you to create, integrate, and manage your own mobile event or conference content. With
+                    EventToGo, you have easy access to all event information on your website and mobile apps, offering
+                    flexibility and convenience. It facilitates event management companies in swiftly mobilizing their
+                    events and conferences.</p>
+                <p>With EventToGo™, effortlessly manage schedules, agendas, attendees, sponsors, speaker information,
+                    push
+                    messaging, links, and calendar integration—all through a robust mobile platform. EventToGo™ supports
+                    Android, Apple, BlackBerry (coming soon!), and Windows 7 (coming soon!) platforms.</p>
+                <h5>Features:</h5>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Branded Event</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Exhibitors list and description</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Manage event details effortlessly with an easy-to-use interface, providing
-                        instantaneous updates to attendees' mobile devices.</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Event or Conference schedule</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">My Schedule</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Ensure ongoing engagement by keeping the app and data active even after the
-                        event date has passed.</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Speakers profile</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1 mb-3">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Calendar integration</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Transform into your single window for all future events, consolidating
-                        information and enhancing accessibility for attendees.</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Sponsorship space</p>
+                    </div>
                 </div>
-            </div>
-            <h5>Branded Mobile Event Application Solution Tailored to Your Specific Needs.</h5>
-            <p>TekRocks IT Services has developed a proprietary mobile event application using .NET technology. This
-                application can be customized to enhance attendee experience, boost engagement, and deliver measurable
-                ROI for your events or conferences.</p>
-            <p>We have created and deployed native mobile applications and mobile web solutions using a content
-                management system (CMS) built on the Microsoft .NET framework. Our solutions cater to all major mobile
-                platforms, including Apple iPhone, iPad, Android, BlackBerry (coming soon!), and Windows Phone 7 (coming
-                soon!). We offer hosting for the entire solution throughout the event and beyond.</p>
-            <h5>Custom Event Mobile App Development</h5>
-            <p>We provide pre-built modular mobile event app solutions as well as custom development options tailored to
-                enhance your event brand and meet your unique requirements.</p>
-            <p>Our mobile developers can design, develop, and deliver premium features and functionality for your event
-                or conference. These may include surveys, polling, local weather, social media integration, cover flow
-                image gallery, interactive trade show maps, QR Codes, document management, banner ads, and sponsorship,
-                offering a tailored solution to meet your specific needs.</p>
-            <h5>EventToGo Mobile & Content Management System</h5>
-            <p>EventToGo is our comprehensive mobile app paired with a content management system (CMS) platform,
-                enabling you to create, integrate, and manage your own mobile event or conference content. With
-                EventToGo, you have easy access to all event information on your website and mobile apps, offering
-                flexibility and convenience. It facilitates event management companies in swiftly mobilizing their
-                events and conferences.</p>
-            <p>With EventToGo™, effortlessly manage schedules, agendas, attendees, sponsors, speaker information, push
-                messaging, links, and calendar integration—all through a robust mobile platform. EventToGo™ supports
-                Android, Apple, BlackBerry (coming soon!), and Windows 7 (coming soon!) platforms.</p>
-            <h5>Features:</h5>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Bookmark/Favorite</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Branded Event</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Push Messages and Alerts</p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Essential Links</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Exhibitors list and description</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Event or Conference schedule</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">My Schedule</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Speakers profile</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Calendar integration</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Sponsorship space</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Bookmark/Favorite</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Push Messages and Alerts</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Essential Links</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Important Contact Details</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Important Contact Details</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</ng-template>

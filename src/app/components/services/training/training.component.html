@@ -1,70 +1,89 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 p-0">
-            <div class="page-banner-wrapper">
-                <div class="img-container">
-                    <img src="../../../../assets/img/training-banner.jpg" alt="">
-                </div>
-                <div class="text-container bg-white d-inline-block">
-                    <h4>TRAINING</h4>
+<ng-container *ngIf="loading; else content">
+    <div class="loader-wrapper d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="loader"></div>
+        <div class="loader-text">
+            <small>Loading...</small>
+        </div>
+    </div>
+</ng-container>
+<ng-template #content>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div class="page-banner-wrapper">
+                    <div class="img-container">
+                        <img src="../../../../assets/img/training-banner.jpg" alt="">
+                    </div>
+                    <div class="text-container bg-white d-inline-block">
+                        <h4>TRAINING</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5">
-    <div class="row">
-        <div class="col-sm-12">
-            <h5>Java Training Services offer the full scope of services to improve your return on IT spend.</h5>
-            <p>Public and private sector organizations depend heavily on applications for superior service delivery. The
-                development or maintenance of these applications carries significant importance, requiring
-                predictability in delivery, stability, minimized maintenance costs, and agility in implementing changes.
-            </p>
-            <h5>We can help clients improve their return on IT spend:</h5>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <h5>Java Training Services offer the full scope of services to improve your return on IT spend.</h5>
+                <p>Public and private sector organizations depend heavily on applications for superior service delivery.
+                    The
+                    development or maintenance of these applications carries significant importance, requiring
+                    predictability in delivery, stability, minimized maintenance costs, and agility in implementing
+                    changes.
+                </p>
+                <h5>We can help clients improve their return on IT spend:</h5>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">We drive measurable improvements in product quality, reducing defect
+                            density by
+                            up to 65 percent; increase development productivity by up to 30 percent; and deliver on-time
+                            and
+                            on-budget up to 90 percent of the time.
+                        </p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">We drive measurable improvements in product quality, reducing defect density by
-                        up to 65 percent; increase development productivity by up to 30 percent; and deliver on-time and
-                        on-budget up to 90 percent of the time.
-                    </p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">We improve productivity by up to 45 percent while reducing costs by as much
+                            as
+                            50 percent.
+                        </p>
+                    </div>
                 </div>
+                <div class="point-wrapper d-flex mb-1 mb-3">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">We help realize 99 percent or more application availability, 70 percent
+                            reduction in trouble tickets and up to 100 percent efficiency in processing backlogs.
+                        </p>
+                    </div>
+                </div>
+                <h5>Maintain and modernize business-critical mainframe applications</h5>
+                <p>Many mainframe applications are over 20 years old, posing challenges in today's real-time business
+                    landscape. Maintenance becomes complex and costly due to outdated documentation and the departure of
+                    experienced engineers.</p>
+                <p>TekRocks IT Services application development and support services specialize in maintaining
+                    business-critical
+                    mainframe applications and replacing legacy systems. With expertise in managing mainframe costs,
+                    change
+                    requests, and niche technology support, we address the challenges of cost pressures and lack of
+                    support
+                    for packaged solutions. </p>
+                <p>We offer comprehensive services to enhance application quality, addressing issues with structure,
+                    code
+                    quality, and efficiency. Our solutions include cleaning up dead components and unusable code, often
+                    overlooked due to funding constraints. Leveraging home-grown and partner toolsets, we optimize
+                    inventory
+                    and MIPS utilization, ensuring efficient operations.</p>
             </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">We improve productivity by up to 45 percent while reducing costs by as much as
-                        50 percent.
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1 mb-3">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">We help realize 99 percent or more application availability, 70 percent
-                        reduction in trouble tickets and up to 100 percent efficiency in processing backlogs.
-                    </p>
-                </div>
-            </div>
-            <h5>Maintain and modernize business-critical mainframe applications</h5>
-            <p>Many mainframe applications are over 20 years old, posing challenges in today's real-time business
-                landscape. Maintenance becomes complex and costly due to outdated documentation and the departure of
-                experienced engineers.</p>
-            <p>TekRocks IT Services application development and support services specialize in maintaining
-                business-critical
-                mainframe applications and replacing legacy systems. With expertise in managing mainframe costs, change
-                requests, and niche technology support, we address the challenges of cost pressures and lack of support
-                for packaged solutions. </p>
-            <p>We offer comprehensive services to enhance application quality, addressing issues with structure, code
-                quality, and efficiency. Our solutions include cleaning up dead components and unusable code, often
-                overlooked due to funding constraints. Leveraging home-grown and partner toolsets, we optimize inventory
-                and MIPS utilization, ensuring efficient operations.</p>
         </div>
     </div>
-</div>
+</ng-template>

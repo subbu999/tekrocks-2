@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dot-net.component.css']
 })
 export class DotNetComponent implements OnInit {
-
+  loading: boolean = true;
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500)
   }
 
 }

@@ -1,77 +1,96 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 p-0">
-            <div class="page-banner-wrapper">
-                <div class="img-container">
-                    <img src="../../../../assets/img/software-development-banner.jpg" alt="">
-                </div>
-                <div class="text-container bg-white d-inline-block">
-                    <h4>SOFTWARE DEVELOPMENT</h4>
+<ng-container *ngIf="loading; else content">
+    <div class="loader-wrapper d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="loader"></div>
+        <div class="loader-text">
+            <small>Loading...</small>
+        </div>
+    </div>
+</ng-container>
+<ng-template #content>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div class="page-banner-wrapper">
+                    <div class="img-container">
+                        <img src="../../../../assets/img/software-development-banner.jpg" alt="">
+                    </div>
+                    <div class="text-container bg-white d-inline-block">
+                        <h4>SOFTWARE DEVELOPMENT</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5">
-    <div class="row">
-        <div class="col-sm-12">
-            <p>TekRocks IT Services boasts a software development division specializing in custom applications. Our
-                experienced teams offer tailored solutions to address any software development challenges your business
-                encounters.</p>
-            <p>With TekRocks IT Services, you gain efficient access to the latest technology, ensuring cost savings,
-                reduced risks, and flexibility for your company. Our experienced team offers cutting-edge solutions and
-                support to help your business grow affordably.</p>
-            <h5>TekRocks IT Services follows a simple yet effective approach, prioritizing:</h5>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+    <div class="container my-5 py-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>TekRocks IT Services boasts a software development division specializing in custom applications. Our
+                    experienced teams offer tailored solutions to address any software development challenges your
+                    business
+                    encounters.</p>
+                <p>With TekRocks IT Services, you gain efficient access to the latest technology, ensuring cost savings,
+                    reduced risks, and flexibility for your company. Our experienced team offers cutting-edge solutions
+                    and
+                    support to help your business grow affordably.</p>
+                <h5>TekRocks IT Services follows a simple yet effective approach, prioritizing:</h5>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Thoroughly understand your objectives
+                        </p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Thoroughly understand your objectives
-                    </p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Analyze your current investments in technologies with a keen eye on
+                            leveraging
+                            and/or improving upon your current systems.
+                        </p>
+                    </div>
                 </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Propose a detailed road map to achieve your objectives.
+                        </p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1 mb-3">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Rigorously monitor accountability, responsibilities and deliverables
+                            through
+                            exceptional client/vendor communication.
+                        </p>
+                    </div>
+                </div>
+                <p>Our experience, grasp of current and emerging technologies, and diverse skill sets have garnered the
+                    respect and trust of our clients. We believe in leveraging history to anticipate the future, be it
+                    your
+                    company's trajectory or the evolving role of software in business management. Our aim is to align
+                    your
+                    needs with optimal solutions.</p>
+                <p>TekRocks IT Services offers a broad spectrum of website design, web development, and programming
+                    services. From basic HTML-based designs to intricate AJAX-based development and multimedia-rich
+                    e-commerce applications, we tailor solutions to your needs. Collaborating closely with your company,
+                    we
+                    define objectives and craft graphic designs and interactive tools to accomplish them effectively.
+                </p>
+                <p>TekRocks IT Services is a rapidly growing IT consulting organization, committed to delivering a
+                    diverse
+                    array of information technology and high-quality consulting services. We specialize in deploying
+                    Certified IT Professionals who excel in teamwork, personal responsibility, innovation, and business
+                    process engineering, consistently exceeding our clients' expectations.</p>
             </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Analyze your current investments in technologies with a keen eye on leveraging
-                        and/or improving upon your current systems.
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Propose a detailed road map to achieve your objectives.
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1 mb-3">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Rigorously monitor accountability, responsibilities and deliverables through
-                        exceptional client/vendor communication.
-                    </p>
-                </div>
-            </div>
-            <p>Our experience, grasp of current and emerging technologies, and diverse skill sets have garnered the
-                respect and trust of our clients. We believe in leveraging history to anticipate the future, be it your
-                company's trajectory or the evolving role of software in business management. Our aim is to align your
-                needs with optimal solutions.</p>
-            <p>TekRocks IT Services offers a broad spectrum of website design, web development, and programming
-                services. From basic HTML-based designs to intricate AJAX-based development and multimedia-rich
-                e-commerce applications, we tailor solutions to your needs. Collaborating closely with your company, we
-                define objectives and craft graphic designs and interactive tools to accomplish them effectively.</p>
-            <p>TekRocks IT Services is a rapidly growing IT consulting organization, committed to delivering a diverse
-                array of information technology and high-quality consulting services. We specialize in deploying
-                Certified IT Professionals who excel in teamwork, personal responsibility, innovation, and business
-                process engineering, consistently exceeding our clients' expectations.</p>
         </div>
     </div>
-</div>
+</ng-template>

@@ -1,126 +1,152 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 p-0">
-            <div class="page-banner-wrapper">
-                <div class="img-container">
-                    <img src="../../../../assets/img/staff-augmentation-banner.jpg" alt="">
-                </div>
-                <div class="text-container bg-white d-inline-block">
-                    <h4>STAFF AUGMENTATION</h4>
+<ng-container *ngIf="loading; else content">
+    <div class="loader-wrapper d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="loader"></div>
+        <div class="loader-text">
+            <small>Loading...</small>
+        </div>
+    </div>
+</ng-container>
+<ng-template #content>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div class="page-banner-wrapper">
+                    <div class="img-container">
+                        <img src="../../../../assets/img/staff-augmentation-banner.jpg" alt="">
+                    </div>
+                    <div class="text-container bg-white d-inline-block">
+                        <h4>STAFF AUGMENTATION</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5 pt-3">
-    <div class="row">
-        <div class="col-sm-12">
-            <p>TekRocks IT Services Staff Augmentation ensures you have the most qualified and experienced resources on
-                the job.</p>
-            <p>TekRocks IT Services Staff Augmentation provides qualified and experienced personnel tailored to your
-                needs, exclusively working for you from our offices. It's an ideal solution for your special or seasonal
-                projects without the need for permanent staff additions. We are committed to customer-centric services
-                that are highly effective, transparent, and free of hidden costs, out-of-pocket expenses, or additional
-                taxes.</p>
-            <p>Since 2000, TekRocks IT Services has leveraged insights, resources, and a global talent network across
-                various technologies and industries to offer your company the right consultants precisely when you need
-                them.</p>
-            <p>TekRocks IT Services boasts a robust proposition with its competent and vast resource pool, supported by
-                an extensive proprietary database and the largest referral-based network. Leveraging this strength, we
-                provide multiple qualified applicants for your single position. Our proven recruitment methodology
-                ensures that screened candidates can be onboarded swiftly, even on short notice.</p>
-            <h5>Benefits</h5>
-            <p>For small to mid-sized businesses seeking to avoid the hiring process, retaining full-time employees, and
-                managing benefits and taxes, TekRocks IT Services offers the perfect solution. With our Staff
-                Augmentation services, your business can immediately reap benefits to address your IT and business
-                requirements.</p>
-            <p>Cost-Effectiveness: With Staff Augmentation, you'll hire a full-time equivalent (FTE) or virtual staff
-                without the need for an expensive office setup, paying for leaves, health benefits, travel expenses, or
-                employment taxes.</p>
-            <p>Time Efficiency: Our dedicated virtual staff brings expertise and experience to their respective fields.
-                They are time-bound individuals committed to meeting your business needs.</p>
-            <p>Direct Access: You'll have direct access to our resources, enabling you to assign work directly to them.
-                Collaborating with our resources mirrors working with your own employees. You can instruct them on your
-                processes and reporting methodologies, which they will adhere to.</p>
-            <p>IP Protection: Operating on a "work for hire" basis, all intellectual property and copyrights of the work
-                completed by our resources remain with you.</p>
-            <h5>Staff Augmentation Services</h5>
-            <p>Here are some of the resources available as part of our offshore staff augmentation services:</p>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+    <div class="container my-5 py-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>TekRocks IT Services Staff Augmentation ensures you have the most qualified and experienced resources
+                    on
+                    the job.</p>
+                <p>TekRocks IT Services Staff Augmentation provides qualified and experienced personnel tailored to your
+                    needs, exclusively working for you from our offices. It's an ideal solution for your special or
+                    seasonal
+                    projects without the need for permanent staff additions. We are committed to customer-centric
+                    services
+                    that are highly effective, transparent, and free of hidden costs, out-of-pocket expenses, or
+                    additional
+                    taxes.</p>
+                <p>Since 2000, TekRocks IT Services has leveraged insights, resources, and a global talent network
+                    across
+                    various technologies and industries to offer your company the right consultants precisely when you
+                    need
+                    them.</p>
+                <p>TekRocks IT Services boasts a robust proposition with its competent and vast resource pool, supported
+                    by
+                    an extensive proprietary database and the largest referral-based network. Leveraging this strength,
+                    we
+                    provide multiple qualified applicants for your single position. Our proven recruitment methodology
+                    ensures that screened candidates can be onboarded swiftly, even on short notice.</p>
+                <h5>Benefits</h5>
+                <p>For small to mid-sized businesses seeking to avoid the hiring process, retaining full-time employees,
+                    and
+                    managing benefits and taxes, TekRocks IT Services offers the perfect solution. With our Staff
+                    Augmentation services, your business can immediately reap benefits to address your IT and business
+                    requirements.</p>
+                <p>Cost-Effectiveness: With Staff Augmentation, you'll hire a full-time equivalent (FTE) or virtual
+                    staff
+                    without the need for an expensive office setup, paying for leaves, health benefits, travel expenses,
+                    or
+                    employment taxes.</p>
+                <p>Time Efficiency: Our dedicated virtual staff brings expertise and experience to their respective
+                    fields.
+                    They are time-bound individuals committed to meeting your business needs.</p>
+                <p>Direct Access: You'll have direct access to our resources, enabling you to assign work directly to
+                    them.
+                    Collaborating with our resources mirrors working with your own employees. You can instruct them on
+                    your
+                    processes and reporting methodologies, which they will adhere to.</p>
+                <p>IP Protection: Operating on a "work for hire" basis, all intellectual property and copyrights of the
+                    work
+                    completed by our resources remain with you.</p>
+                <h5>Staff Augmentation Services</h5>
+                <p>Here are some of the resources available as part of our offshore staff augmentation services:</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Dedicated VB .NET Application Developers</p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Dedicated VB .NET Application Developers</p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Dedicated C# Application Developers</p>
+                    </div>
                 </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Dedicated SharePoint Developers</p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Dedicated PHP Programmers</p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Dedicated HTML/HTML5 Web Developers</p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Dedicated Microsoft SQL DBA</p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Dedicated Search Link Builders</p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Dedicated SEO Campaign Managers</p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1 mb-3">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Dedicated Graphic Design Resources
+                        </p>
+                    </div>
+                </div>
+                <p>TekRocks IT Services has several dedicated resources serving clients worldwide, and we would be
+                    delighted
+                    to assist you with your business needs.</p>
             </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Dedicated C# Application Developers</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Dedicated SharePoint Developers</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Dedicated PHP Programmers</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Dedicated HTML/HTML5 Web Developers</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Dedicated Microsoft SQL DBA</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Dedicated Search Link Builders</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Dedicated SEO Campaign Managers</p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1 mb-3">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Dedicated Graphic Design Resources
-                    </p>
-                </div>
-            </div>
-            <p>TekRocks IT Services has several dedicated resources serving clients worldwide, and we would be delighted
-                to assist you with your business needs.</p>
         </div>
     </div>
-</div>
+</ng-template>

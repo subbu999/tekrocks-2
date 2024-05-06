@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class OffshoreStaffingComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit(): void {
+  loading: boolean = true;
+  ngOnInit() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1000)
   }
 
 }

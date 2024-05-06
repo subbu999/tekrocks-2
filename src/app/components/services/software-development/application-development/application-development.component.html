@@ -1,41 +1,55 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 p-0">
-            <div class="page-banner-wrapper">
-                <div class="img-container">
-                    <img src="../../../../../assets/img/application-development-banner.jpg" alt="">
-                </div>
-                <div class="text-container bg-white d-inline-block">
-                    <h4>APPLICATION DEVELOPMENT</h4>
+<ng-container *ngIf="loading; else content">
+    <div class="loader-wrapper d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="loader"></div>
+        <div class="loader-text">
+            <small>Loading...</small>
+        </div>
+    </div>
+</ng-container>
+<ng-template #content>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div class="page-banner-wrapper">
+                    <div class="img-container">
+                        <img src="../../../../../assets/img/application-development-banner.jpg" alt="">
+                    </div>
+                    <div class="text-container bg-white d-inline-block">
+                        <h4>APPLICATION DEVELOPMENT</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5 pt-3">
-    <div class="row">
-        <div class="col-sm-12">
-            <h6>Application Development and Maintenance Services offer a comprehensive range of solutions to enhance
-                your return on IT investment.</h6>
-            <p>TekRocks IT Services Application Development services assist you in tackling shifting business and
-                technological hurdles by crafting applications customized to your specific business needs. We deliver
-                top-notch, adaptable applications that are simple to maintain, modular for easy upgrades, and boast
-                reliability, security, and seamless deployment through the Infosys Global Delivery Model.</p>
-            <p>TekRocks IT Services Application Development services adhere to industry-standard process quality
-                frameworks like CMMi and CMM. We employ rigorous methodologies and draw upon the expertise of our
-                Centers of Excellence to minimize risk and provide cost and time-to-market advantages.</p>
-            <h6>We can help clients improve their return on IT spend:</h6>
-            <p>Our approach to application development leads to tangible enhancements in product quality, with defect
-                density reduced by as much as 65 percent. Additionally, we boost development productivity by up to 30
-                percent and achieve on-time and on-budget delivery up to 90 percent of the time.</p>
-            <p>We enhance productivity by up to 45 percent, simultaneously achieving cost reductions of up to 50
-                percent.</p>
-            <p>We enable achievement of 99 percent or greater application availability, along with a 70 percent
-                reduction in trouble tickets and up to 100 percent efficiency in processing backlogs.</p>
-            <p>Our comprehensive services target inadequate quality, addressing factors that degrade application
-                structure, code quality, and efficiency. We specialize in cleaning up dead components and unusable code
-                that accumulates due to insufficient funding for periodic cleanup and optimization. Leveraging both
-                in-house and partner toolsets, we optimize inventory and MIPS utilization.</p>
+    <div class="container my-5 py-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <h6>Application Development and Maintenance Services offer a comprehensive range of solutions to enhance
+                    your return on IT investment.</h6>
+                <p>TekRocks IT Services Application Development services assist you in tackling shifting business and
+                    technological hurdles by crafting applications customized to your specific business needs. We
+                    deliver
+                    top-notch, adaptable applications that are simple to maintain, modular for easy upgrades, and boast
+                    reliability, security, and seamless deployment through the Infosys Global Delivery Model.</p>
+                <p>TekRocks IT Services Application Development services adhere to industry-standard process quality
+                    frameworks like CMMi and CMM. We employ rigorous methodologies and draw upon the expertise of our
+                    Centers of Excellence to minimize risk and provide cost and time-to-market advantages.</p>
+                <h6>We can help clients improve their return on IT spend:</h6>
+                <p>Our approach to application development leads to tangible enhancements in product quality, with
+                    defect
+                    density reduced by as much as 65 percent. Additionally, we boost development productivity by up to
+                    30
+                    percent and achieve on-time and on-budget delivery up to 90 percent of the time.</p>
+                <p>We enhance productivity by up to 45 percent, simultaneously achieving cost reductions of up to 50
+                    percent.</p>
+                <p>We enable achievement of 99 percent or greater application availability, along with a 70 percent
+                    reduction in trouble tickets and up to 100 percent efficiency in processing backlogs.</p>
+                <p>Our comprehensive services target inadequate quality, addressing factors that degrade application
+                    structure, code quality, and efficiency. We specialize in cleaning up dead components and unusable
+                    code
+                    that accumulates due to insufficient funding for periodic cleanup and optimization. Leveraging both
+                    in-house and partner toolsets, we optimize inventory and MIPS utilization.</p>
+            </div>
         </div>
     </div>
-</div>
+</ng-template>

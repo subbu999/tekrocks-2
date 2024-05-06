@@ -1,132 +1,146 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 p-0">
-            <div class="page-banner-wrapper">
-                <div class="img-container">
-                    <img src="../../../../assets/img/technology-banner.jpg" alt="">
-                </div>
-                <div class="text-container bg-white d-inline-block">
-                    <h4>TECHNOLOGIES</h4>
+<ng-container *ngIf="loading; else content">
+    <div class="loader-wrapper d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="loader"></div>
+        <div class="loader-text">
+            <small>Loading...</small>
+        </div>
+    </div>
+</ng-container>
+<ng-template #content>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div class="page-banner-wrapper">
+                    <div class="img-container">
+                        <img src="../../../../assets/img/technology-banner.jpg" alt="">
+                    </div>
+                    <div class="text-container bg-white d-inline-block">
+                        <h4>TECHNOLOGIES</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5">
-    <div class="row">
-        <div class="col-sm-12">
-            <p>TekRocks IT Services provides customized PHP development solutions tailored to your requirements. PHP is
-                renowned for developing top-tier web applications, e-commerce solutions, and Custom CMS Solutions.
-                Created by Rasmus Lerdorf in 1995, PHP has rapidly gained popularity among developers, revolutionizing
-                the Internet. The use of PHP offers versatility, efficiency, and a vast developer community, making it a
-                preferred choice for web development projects.</p>
-            <p>PHP is free software that is extendible and constantly evolving.</p>
-            <p>It is the most popular Apache HTTP Server module (as mod_php).</p>
-            <p>Great community support available, if you get stuck with no problem</p>
-            <p>PHP's OOP support fosters strong, scalable application architecture.</p>
-            <p>Well-established frameworks such as Zend Framework, Symfony, and CakePHP offer rapid application
-                development capabilities, streamlining the development process.</p>
-            <p>A wealth of development resources, including blogs, forums, and freeware scripts, are readily accessible.
-                Numerous open-source applications, such as Magento, OsCommerce, Joomla, WordPress, and more, offer
-                extensive functionality at no cost.</p>
-            <p>We've assembled a team of highly skilled PHP developers dedicated to crafting tailored solutions.
-                Emphasizing performance and quality, we ensure world-class websites and applications. Our PHP
-                development process prioritizes meticulous coding and client-centric solutions.
-            </p>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>TekRocks IT Services provides customized PHP development solutions tailored to your requirements. PHP
+                    is
+                    renowned for developing top-tier web applications, e-commerce solutions, and Custom CMS Solutions.
+                    Created by Rasmus Lerdorf in 1995, PHP has rapidly gained popularity among developers,
+                    revolutionizing
+                    the Internet. The use of PHP offers versatility, efficiency, and a vast developer community, making
+                    it a
+                    preferred choice for web development projects.</p>
+                <p>PHP is free software that is extendible and constantly evolving.</p>
+                <p>It is the most popular Apache HTTP Server module (as mod_php).</p>
+                <p>Great community support available, if you get stuck with no problem</p>
+                <p>PHP's OOP support fosters strong, scalable application architecture.</p>
+                <p>Well-established frameworks such as Zend Framework, Symfony, and CakePHP offer rapid application
+                    development capabilities, streamlining the development process.</p>
+                <p>A wealth of development resources, including blogs, forums, and freeware scripts, are readily
+                    accessible.
+                    Numerous open-source applications, such as Magento, OsCommerce, Joomla, WordPress, and more, offer
+                    extensive functionality at no cost.</p>
+                <p>We've assembled a team of highly skilled PHP developers dedicated to crafting tailored solutions.
+                    Emphasizing performance and quality, we ensure world-class websites and applications. Our PHP
+                    development process prioritizes meticulous coding and client-centric solutions.
+                </p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Web application development & portal development
+                        </p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Web application development & portal development
-                    </p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">E-commerce applications and catalogs
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">CRM and CMS applications
+                        </p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">E-commerce applications and catalogs
-                    </p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Social Networking Portal Development
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">CRM and CMS applications
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Social Networking Portal Development
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Enterprise Application Development
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Enterprise Application Development
 
-                    </p>
+                        </p>
+                    </div>
                 </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">PHP Application Migration
+                        </p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">PHP Application Support and Maintenance
+                        </p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">PHP Content Management System(CMS) development
+                        </p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">PHP PHP and MySQL web site design and development
+                        </p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1 mb-3">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Custom development based on client requirement
+                        </p>
+                    </div>
+                </div>
+                <p>With a team of expert web designers and developers, we create stunning, feature-rich websites. Our
+                    expertise spans static information sites, dynamic web portals, and complex e-commerce platforms, all
+                    powered by the reliability of PHP.</p>
             </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">PHP Application Migration
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">PHP Application Support and Maintenance
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">PHP Content Management System(CMS) development
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">PHP PHP and MySQL web site design and development
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1 mb-3">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Custom development based on client requirement
-                    </p>
-                </div>
-            </div>
-            <p>With a team of expert web designers and developers, we create stunning, feature-rich websites. Our
-                expertise spans static information sites, dynamic web portals, and complex e-commerce platforms, all
-                powered by the reliability of PHP.</p>
         </div>
     </div>
-</div>
+</ng-template>

@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dba.component.css']
 })
 export class DbaComponent implements OnInit {
+  loading: boolean = true;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500)
   }
 
 }

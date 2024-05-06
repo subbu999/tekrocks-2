@@ -1,107 +1,129 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12 p-0">
-            <div class="page-banner-wrapper">
-                <div class="img-container">
-                    <img src="../../../../../assets/img/CMS.jpg" alt="">
-                </div>
-                <div class="text-container bg-white d-inline-block">
-                    <h4>CMS</h4>
+<ng-container *ngIf="loading; else content">
+    <div class="loader-wrapper d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="loader"></div>
+        <div class="loader-text">
+            <small>Loading...</small>
+        </div>
+    </div>
+</ng-container>
+<ng-template #content>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 p-0">
+                <div class="page-banner-wrapper">
+                    <div class="img-container">
+                        <img src="../../../../../assets/img/CMS.jpg" alt="">
+                    </div>
+                    <div class="text-container bg-white d-inline-block">
+                        <h4>CMS</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container my-5 pt-3">
-    <div class="row">
-        <div class="col-sm-12">
-            <p>Magento is an open-source e-commerce solution that provides retailers with extensive flexibility and
-                control over the appearance, content, and functionality of their online stores.</p>
-            <p>Magento's user-friendly administration interface includes a variety of tools for marketing,
-                merchandising, and content management, empowering retailers without imposing limitations on their
-                business operations and workflows.</p>
-            <p>Magento is built using PHP and utilizes the Zend Framework, which follows the Model-View-Controller (MVC)
-                architectural pattern. It employs an Entity-Attribute-Value (EAV) database model based on MySQL.
-                Magento's architecture is highly modular, and it automatically manages updates to module database
-                schemas.</p>
-            <h6>WHY WE USE MAGENTO ?</h6>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+    <div class="container my-5 pt-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Magento is an open-source e-commerce solution that provides retailers with extensive flexibility and
+                    control over the appearance, content, and functionality of their online stores.</p>
+                <p>Magento's user-friendly administration interface includes a variety of tools for marketing,
+                    merchandising, and content management, empowering retailers without imposing limitations on their
+                    business operations and workflows.</p>
+                <p>Magento is built using PHP and utilizes the Zend Framework, which follows the Model-View-Controller
+                    (MVC)
+                    architectural pattern. It employs an Entity-Attribute-Value (EAV) database model based on MySQL.
+                    Magento's architecture is highly modular, and it automatically manages updates to module database
+                    schemas.</p>
+                <h6>WHY WE USE MAGENTO ?</h6>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Magento provides complete control over integrations, allowing for the
+                            development of bespoke solutions tailored to the specific needs of customers. </p>
+                    </div>
                 </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Magento provides complete control over integrations, allowing for the
-                        development of bespoke solutions tailored to the specific needs of customers. </p>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Open source.
+                        </p>
+                    </div>
                 </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">Internationalization made simple.
+                        </p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">ow risk to innovate, try new things, stay ahead of the trends.
+                        </p>
+                    </div>
+                </div>
+                <div class="point-wrapper d-flex mb-1">
+                    <div class="icon">
+                        <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
+                    </div>
+                    <div class="text">
+                        <p class="mb-0 ms-3">High ROI for our customers.
+                        </p>
+                    </div>
+                </div>
+                <h6>MAGENTO ENTERPRISE FEATURES:</h6>
+                <p>Utilize Magento's marketing and merchandising tools to turn browsers into buyers, implementing
+                    strategies
+                    such as up-selling, cross-selling, and special pricing programs and promotions.</p>
+                <p>Customize Magento to fit your business needs by integrating it with third-party applications,
+                    managing
+                    products and catalogs flexibly, and utilizing comprehensive admin capabilities, including multi-site
+                    management.</p>
+                <p>Magento provides the flexibility to create rich and differentiated consumer experiences across
+                    desktop
+                    and mobile platforms. Additionally, it allows you to tailor back-end workflows to fit your business
+                    requirements.</p>
+                <p>Magento offers powerful attribute-based product catalog functionality, making it an ideal choice for
+                    selling a wide range of products, from simple items like t-shirts to complex products with
+                    customizable
+                    technical specifications like computers.</p>
+                <p>Magento provides rules-based promotions and coupon functionality, allowing you to set up promotions
+                    based
+                    on a wide range of rules. It also supports buy X get Y free offers, giving you flexibility in
+                    creating
+                    enticing promotions for your customers.</p>
+                <p>Magento offers multi-store functionality, allowing you to manage different websites from the same
+                    Magento
+                    back-end. This feature enables you to create entirely new sites or set up geo-location targeted
+                    stores,
+                    such as a US store with US currency or a French store with Euros and French language support.</p>
+                <p>Magento's modular architecture allows you to extend its functionality without modifying the core
+                    code.
+                    This approach ensures seamless upgrades in the future and provides access to a vast library of over
+                    25,000 extensions that can enhance your site's capabilities with ease.</p>
+                <p>Access enterprise-level e-commerce features without hefty upfront costs. Magento offers robust
+                    capabilities like product reviews, layered navigation, product tagging, comprehensive customer
+                    accounts,
+                    and advanced backend administration as standard features.</p>
+                <p>Magento's flexible architecture allows you to import products and categories from Amazon, eBay, and
+                    other
+                    sources, seamlessly integrating them into your store. You can customize tax percentages on the base
+                    price to suit your business needs, ensuring accurate pricing for your products.</p>
+                <p>Magento boasts exceptional search engine readiness, making it one of the most SEO-friendly e-commerce
+                    platforms available. While it's highly effective out of the box, we ensure optimal performance by
+                    implementing features like canonical URLs to address any minor issues in Magento's architecture.</p>
+                <p>Magento offers robust integration with Google Analytics, providing comprehensive e-commerce reporting
+                    directly within the Google Analytics platform.</p>
             </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Open source.
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">Internationalization made simple.
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">ow risk to innovate, try new things, stay ahead of the trends.
-                    </p>
-                </div>
-            </div>
-            <div class="point-wrapper d-flex mb-1">
-                <div class="icon">
-                    <i class="bi bi-check-circle" style="color: rgb(0, 91, 86);"></i>
-                </div>
-                <div class="text">
-                    <p class="mb-0 ms-3">High ROI for our customers.
-                    </p>
-                </div>
-            </div>
-            <h6>MAGENTO ENTERPRISE FEATURES:</h6>
-            <p>Utilize Magento's marketing and merchandising tools to turn browsers into buyers, implementing strategies
-                such as up-selling, cross-selling, and special pricing programs and promotions.</p>
-            <p>Customize Magento to fit your business needs by integrating it with third-party applications, managing
-                products and catalogs flexibly, and utilizing comprehensive admin capabilities, including multi-site
-                management.</p>
-            <p>Magento provides the flexibility to create rich and differentiated consumer experiences across desktop
-                and mobile platforms. Additionally, it allows you to tailor back-end workflows to fit your business
-                requirements.</p>
-            <p>Magento offers powerful attribute-based product catalog functionality, making it an ideal choice for
-                selling a wide range of products, from simple items like t-shirts to complex products with customizable
-                technical specifications like computers.</p>
-            <p>Magento provides rules-based promotions and coupon functionality, allowing you to set up promotions based
-                on a wide range of rules. It also supports buy X get Y free offers, giving you flexibility in creating
-                enticing promotions for your customers.</p>
-            <p>Magento offers multi-store functionality, allowing you to manage different websites from the same Magento
-                back-end. This feature enables you to create entirely new sites or set up geo-location targeted stores,
-                such as a US store with US currency or a French store with Euros and French language support.</p>
-            <p>Magento's modular architecture allows you to extend its functionality without modifying the core code.
-                This approach ensures seamless upgrades in the future and provides access to a vast library of over
-                25,000 extensions that can enhance your site's capabilities with ease.</p>
-            <p>Access enterprise-level e-commerce features without hefty upfront costs. Magento offers robust
-                capabilities like product reviews, layered navigation, product tagging, comprehensive customer accounts,
-                and advanced backend administration as standard features.</p>
-            <p>Magento's flexible architecture allows you to import products and categories from Amazon, eBay, and other
-                sources, seamlessly integrating them into your store. You can customize tax percentages on the base
-                price to suit your business needs, ensuring accurate pricing for your products.</p>
-            <p>Magento boasts exceptional search engine readiness, making it one of the most SEO-friendly e-commerce
-                platforms available. While it's highly effective out of the box, we ensure optimal performance by
-                implementing features like canonical URLs to address any minor issues in Magento's architecture.</p>
-            <p>Magento offers robust integration with Google Analytics, providing comprehensive e-commerce reporting
-                directly within the Google Analytics platform.</p>
         </div>
     </div>
-</div>
+</ng-template>

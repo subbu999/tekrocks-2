@@ -8,9 +8,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  loading: boolean = true;
   myForm!: FormGroup;
   constructor(private fb: FormBuilder) { }
   ngOnInit(): void {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500)
     this.myForm = this.fb.group({
       firstName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
       lastName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
@@ -18,7 +22,8 @@ export class ContactComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
       yourMessage: ['', Validators.required],
-    })
+    });
+
   }
   onFormSubmit() {
     console.log(this.myForm.value);
